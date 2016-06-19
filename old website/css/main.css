@@ -1,0 +1,30 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body { margin-top: 30px; }
+
+h1, h2, h3 { color: #e03f24; font-family: 'Raleway', sans-serif; }
+
+.title { border-bottom: 1px solid; }
+
+
+.navbar-header {   }
+.logo img{ margin: 10px 0; }
+.left-side{ border-right: 2px dashed #1784c9; background: #3FA7E6; }
+.wrapper { position: fixed; width: 100%; height: 100%; background: #3FA7E6;  }
+.main-content { border-left: 2px dashed #ddd; }
+
+.list-group-item { border: none; background: #3FA7E6 }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { background: #3FA7E6; }
+
+a.list-group-item.hover { background: #000; }
+
+.img-circle { border: 2px solid #ddd; }
+
+.menu { margin-left: 80px; }
+
+#footer { background: #fff; height: 60px; }
+

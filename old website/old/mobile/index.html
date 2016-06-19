@@ -1,0 +1,261 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Gecko Vodka</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+	<link rel="stylesheet" href="screen.css" />
+	
+</head> 
+
+	
+
+<body> 
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Gecko Vodka</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="one">
+		<img class="gecko-image" src="images/gecko-yello-patch1.jpg"/>
+		
+		<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d"> 
+				<li data-role="list-divider">Have A Look Around</li> 
+				<li><a href="#flavours" data-transition="slide">Gecko Flavours</a></li> 
+				<li><a href="#about" data-transition="slide">About Gecko</a></li> 
+				<li><a href="#cocktails" data-transition="slide">The Cocktail Book</a></li>
+				<li><a href="#promotions" data-transition="slide">Promotions</a></li> 
+				<li><a href="#contact" data-transition="slide">Contact Us</a></li> 
+		</ul> 
+		
+		</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<div data-role="navbar">
+		<ul>
+			<li><a class="ui-btn-active" href="#one">Home</a></li>
+			<li><a href="#about">About Gecko</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of flavours -->
+<div data-role="page" id="flavours" data-theme="a">
+
+	<div data-role="header" data-position="inline">
+		<a href="index.html" data-icon="back">back</a>
+		<h1>Flavours of Gecko Vodka</h1>
+		<a href="#one" data-icon="home">Home</a>
+	</div>
+	
+	<div data-role="content" data-theme="a">	
+	
+	<ul data-role="listview"> 
+			<li><a href="index.html"> 
+				<img src="images/caramel-vodka-small.jpg" /> 
+				<h3>Gecko&reg; Carmel Vodka</h3> 
+				<p>Guaranteed to leave your taste-buds in disbelief, Gecko Caramel Vodka has a rich caramel candy aroma with just a touch of alcohol that is almost completely hidden under the sweetness.</p> 
+			</a></li> 
+			<li><a href="index.html"> 
+				<img src="images/apple-vodka-small.jpg" /> 
+				<h3>Gecko&reg; Apple Vodka</h3> 
+				<p>Hot Chip</p> 
+			</a></li>
+			<li><a href="index.html"> 
+				<img src="images/chocolate-vodka-small.jpg" /> 
+				<h3>Gecko&reg; Chocolate Vodka</h3> 
+				<p>Hot Chip</p> 
+			</a></li>
+			<li><a href="index.html"> 
+				<img src="images/original-vodka-small.jpg" /> 
+				<h3>Gecko&reg; Nordic Vodka</h3> 
+				<p>Hot Chip</p> 
+			</a></li>
+			<li><a href="index.html"> 
+				<img src="images/berry-vodka-small.jpg" /> 
+				<h3>Gecko&reg; Mixed Berry Vodka</h3> 
+				<p>Hot Chip</p> 
+			</a></li>
+			<li><a href="index.html"> 
+				<img src="images/amaretto-hdr-small.jpg" /> 
+				<h3>Gecko&reg; Pop</h3> 
+				<p>Hot Chip</p> 
+			</a></li>
+			</ul> 
+		
+	</div><!-- /content -->
+
+	
+	<div data-role="footer" data-theme="d">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#one">Home</a></li>
+			<li><a href="#about">About Gecko</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /flavours -->
+
+<!-- Start of about -->
+<div data-role="page" id="about" data-theme="a">
+
+	<div data-role="header" data-position="inline">
+		<a href="index.html" data-icon="back">back</a>
+		<h1>About Gecko Vodka</h1>
+		<a href="#one" data-icon="home">Home</a>
+	</div>
+	
+	<div data-role="content" data-theme="a">	
+		<h2>About Gecko Vodka</h2>
+		<h4>Gecko Vodka is taking the boutique beverage industry by storm. Already one of the hottest beverage ranges in Spain and France, it is spearheaded by the amazingly delicious Original Caramel Vodka ( 30% abv )</h4>
+		<p>Our delicate and refined Twovodk Vodka is produced from 100% neutral grain grown in isolation in Nordic fields and blended with pure glacial water from an underground lake. This centuries old distillation process of our original formula means that the pH level is higher, leaving a very smooth, crisp taste. Having mastered our original base Vodka, we expanded our production to include an amazing range of delectable Flavoured Vodkas including the Original Caramel Vodka, Chocolate Vodka and the refreshingly delicious Apple Vodka.</p>
+	    <p>For retail and trade information please click <a href="#trade" data-transition="pop">here</a> </p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#one">Home</a></li>
+			<li><a class="ui-btn-active" href="#about">About Gecko</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- about -->
+
+<!-- Start of cocktails -->
+<div data-role="page" id="cocktails" data-theme="a">
+
+	<div data-role="header" data-position="inline">
+		<a href="index.html" data-icon="back">back</a>
+		<h1>Cocktails</h1>
+		<a href="#one" data-icon="home">Home</a>
+	</div>
+	
+	<div data-role="content" data-theme="a">	
+		<h2>Gecko Tropical Cachacha</h2>
+		<p><img src="images/tropicalcachacha.jpg"</p>	
+		<p><ul>
+			<li>1 Part Gecko Nordic Vodka</li>
+			<li>1 Part Gecko Pop</li>
+			<li>2 Parts Pineapple Juice</li>
+			<li>Mix with orange juice and serve</li>
+		</ul></p>	
+		<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Homepage</a></p>	
+		
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#one">Home</a></li>
+			<li><a href="#about">About Gecko</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- cocktails -->	
+
+<!-- Start of promotions -->
+<div data-role="page" id="promotions" data-theme="a">
+
+	<div data-role="header" data-position="inline">
+		<a href="index.html" data-icon="back">back</a>
+		<h1>Promotions</h1>
+		<a href="#one" data-icon="home">Home</a>
+	</div>
+	
+	<div data-role="content" data-theme="a">	
+		<h2>Promotion Nights</h2>
+		<p>We frequently hold promotion nights in bars and venues with a whole load of goodies to be won. Have a look below to see where we are going to be over the next while…</p>
+	</div><!-- /content -->
+	<div data-role="footer" data-theme="d">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#one">Home</a></li>
+			<li><a href="#about">About Gecko</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- promotions -->
+
+<!-- Start of contact -->
+<div data-role="page" id="contact" data-theme="a">
+
+	<div data-role="header" data-position="inline">
+		<a data-add-back-btn="true" data-icon="back">back</a>
+		<h1>Contact Us</h1>
+		<a href="#one" data-icon="home">Home</a>
+	</div>
+
+	<div data-role="content" data-theme="a">	
+		<h2>Get in touch!</h2>
+		<div data-role="fieldcontain">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" value=""  />
+        </div>
+        <div data-role="fieldcontain">
+          <label for="name">Email:</label>
+          <input type="email" name="email" id="email" value=""  />
+        </div>
+        <div data-role="fieldcontain">
+          <label for="name">Telephone:</label>
+          <input type="number" name="number" id="number" value=""  />
+        </div>
+        <div data-role="fieldcontain">
+	      <label for="textarea">Comment:</label>
+	      <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+        </div>
+        <button type="submit" data-theme="b" name="submit" value="submit-value" class="ui-btn-hidden" aria-disabled="false">Submit</button>
+        
+	</div><!-- /content -->
+	<div data-role="footer" data-theme="d">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#one">Home</a></li>
+			<li><a href="#about">About Gecko</a></li>
+			<li><a class="ui-btn-active" href="#contact">Contact Us</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- contact -->
+
+
+<!-- Start of trade -->
+<div data-role="page" id="trade" data-theme="a">
+
+	<div data-role="header" data-position="inline">
+		<a href="index.html" data-icon="back">back</a>
+		<h1>trade</h1>
+		<a href="#one" data-icon="home">Home</a>
+	</div>
+
+	<div data-role="content" data-theme="a">	
+				
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h4>All rights reserved</h4>
+	</div><!-- /footer -->
+</div><!-- trade -->
+
+
+	
+	<div data-role="footer">
+		<h4>Glassio Ltd. All rights reserved</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+</body>
+</html>

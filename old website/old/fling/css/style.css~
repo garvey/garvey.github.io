@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration: none;  }
+
+body { background: url(img/background.jpg); font-family: 'PT Sans', arial, serif;}
+
+h1 {  }
+
+a{
+   color:#CCC;
+   -webkit-transition:color 0.5s ease-in;
+}
+a:hover {color:#000;}
+
+.boxes {  list-style: none; float: left; }
+ul .boxes { width: 960px;  }
+
+.boxes li { display: block; float: left; }
+
+/* MENU */
+
+#nav {
+	float: right;
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style: none;
+	font-size: 18px; }
+	
+#nav li {
+	float: right;
+	margin: 20px;}
+	 
+#nav a { text-decoration: none; }
+
+#nav .selected { color: #000; font-size: 18px;  }
+
+
+
+/* MENU */
+
+/* SLIDE UP BOX */
+		.slide-up-boxes a { 
+			display: block; 
+			height: 130px; 
+			margin: 0 0 20px 0; 
+			background: rgba(215, 215, 215, 0.5); 
+			border: 1px solid #ccc; 
+			height: 65px; 
+			overflow: hidden;
+			width: 305px;
+			margin-left: 5px;
+			 
+		}
+		
+		.slide-up-boxes h5 { 
+			color: #333; 
+			text-align: center;
+			height: 65px; 
+			font: italic 18px/65px Georgia, Serif;    /* Vertically center text by making line height equal to height */
+			 opacity: 1;
+			 -webkit-transition: all 0.2s linear; 
+			 -moz-transition: all 0.2s linear; 
+			 -o-transition: all 0.2s linear;
+		}
+		
+		.slide-up-boxes a:hover h5 { 
+			margin-top: -65px; 
+			opacity: 0; 
+		}
+		
+		.slide-up-boxes div { 
+			position: relative; 
+			color: white; 
+			font: 12px/15px Georgia, Serif;
+			height: 45px; 
+			padding: 10px; 
+			opacity: 0; 
+			-webkit-transform: rotate(6deg); 
+			-webkit-transition: all 0.4s linear; 
+			-moz-transform: rotate(6deg); 
+			-moz-transition: all 0.4s linear; 
+			-o-transform: rotate(6deg); 
+			-o-transition: all 0.4s linear; 
+		}
+		.slide-up-boxes a:hover div { 
+			opacity: 1; 
+			-webkit-transform: rotate(0); 
+			-moz-transform: rotate(0); 
+			-o-transform: rotate(0); 
+		}
+		.slide-up-boxes .work div { background: #fff url(img/visrez.png) 17px 17px no-repeat; color: #000; padding-left: 120px; }
+		.slide-up-boxes .tweet div { background: #367db2 url(img/twitter.png) 21px 10px no-repeat; padding-left: 90px; }
+		.slide-up-boxes .iadt div { background: #fff url(img/iadt.png) 14px 16px no-repeat; color:#000; padding-left: 133px; }
+
+		
+	article, aside, figure, footer, header, hgroup,
+	menu, nav, section { display: inline; }
+
+	#page-wrap { width: 370px; margin: 60px auto; }
+
+/* SLIDE UP BOX */
+
+
+/* SLIDER */ 
+
+
+
+#content h1 {  margin: 0 0 20px 0; }
+#content p { margin: 0 0 20px 0; }
+#content a { text-decoration: none; }
+
+
+		div#feature_list {
+			width: 750px;
+			height: 240px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		div#feature_list ul {
+			position: absolute;
+			top: 0;
+			list-style: none;	
+			padding: 0;
+			margin: 0;
+		}
+
+		ul#tabs {
+			left: 0;
+			z-index: 2;
+			width: 320px;
+		}
+
+		ul#tabs li {
+			font-size: 12px;
+			font-family: Arial;
+		}
+		
+		ul#tabs li img {
+			padding: 5px;
+			border: none;
+			float: left;
+			margin: 10px 10px 0 0;
+		}
+
+		ul#tabs li a {
+			color: #222;
+			text-decoration: none;	
+			display: block;
+			padding: 10px;
+			height: 60px;
+			outline: none;
+		}
+
+		ul#tabs li a:hover {
+			text-decoration: underline;
+		}
+
+		ul#tabs li a.current {
+			background:  url('img/feature-tab-current.png');
+			color: #FFF;
+		}
+
+		ul#tabs li a.current:hover {
+			text-decoration: none;
+			cursor: default;
+		}
+
+		ul#output {
+			right: 0;
+			width: 463px;
+			height: 240px;
+			position: relative;
+		}
+
+		ul#output li {
+			position: absolute;
+			width: 463px;
+			height: 240px;
+		}
+
+		ul#output li a {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			padding: 8px 12px;
+			text-decoration: none;
+			font-size: 11px;
+			color: #FFF;
+			background: #000;
+			-moz-border-radius: 5px;
+		}
+		
+		ul#output li a:hover {
+			background: #D33431;
+		}
+#content {
+	margin-bottom: 20px;
+	padding: 20px;
+	background: #FFF;	
+	border: 1px solid #DDD;
+	-webkit-box-shadow: 1px 1px 10px #cccccc;
+	-moz-box-shadow: 1px 1px 10px #cccccc;
+	box-shadow: 1px 1px 10px #cccccc; 
+}
+/* SLIDER */
+
+#footer { background: #fff; border-top: 1px solid #ccc; heigh: 100%; }
+
+#footer .bottom { float: right; }
+
+.footer_2 ul  { list-style: none; }
+
+.bottom ul { list-style: none; }
+.bottom li { display:inline; margin: 5px; }
+
