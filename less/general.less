@@ -1,0 +1,115 @@
+
+html {
+  height: 100%;
+}
+body {
+	background: #FFE052;
+  color: #2B2817;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fonts */
+h1 {
+	color: #2B2817;
+	font: 400 92px/84px Abril Fatface;
+}
+
+h2 {
+
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+/* Mixins */
+
+.circle (@size, @background) {
+  width: @size;
+  height: @size;
+  background: @background;
+  -moz-border-radius: @size / 2;
+  -webkit-border-radius: @size / 2;
+  border-radius: @size / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @group Media queries */
+
+
+/* @end Media queries */
+
+/* General */
+
+hr {
+	background: #333;
+  border: 0;
+  height: 2px;
+  margin: 12px auto 8px;
+  width: 60px;
+}
+
+/* All them circles */
+.circle-12 {
+  .circle(600px, #C6B420);
+}
+.circle-11 {
+  .circle(550px, #86A132);
+}
+.circle-10 {
+  .circle(500px, #859E39);
+}
+.circle-9 {
+  .circle(450px, #3F8943);
+}
+.circle-8 {
+  .circle(400px, #278354);
+}
+.circle-7 {
+  .circle(350px, #546D43);
+}
+.circle-6 {
+  .circle(300px, #96522D);
+}
+.circle-5 {
+  .circle(250px, #C03C23);
+}
+.circle-4 {
+  .circle(200px, #FF2C1D);
+}
+.circle-3 {
+  .circle(150px, #FF3B1B);
+}
+.circle-2 {
+  .circle(100px, #FF6219);
+}
+.circle-1 {
+  .circle(50px, #FE8D1A);
+}
+
+.intro {
+	text-align: center;
+  margin: 0 auto;
+	p {
+		text-align: center;
+		margin: 0 auto;
+		font: 400 14px/18px 'pt serif';
+	}
+}
+
+footer.footer {
+  margin: 0 auto;
+  flex: 1;
+	p {
+		text-align: center;
+
+    span {
+      color: #ff2c1d;
+    }
+	}
+}
