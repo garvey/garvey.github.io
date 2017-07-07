@@ -38,16 +38,19 @@
 
     <div id="top" class="container-fluid main">
 
-      <div class="row intro">
-        <div class="col-sm-12">
-          <div class="title">
-            <h1>Gearóid Garvey</h1>
-          </div>
+      <nav class="navbar-light nav fixed-top">
+        <div class="float-right">
+          <a href="#home">Home</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
         </div>
+      </nav>
 
+      <div class="row intro">
+        
         <div class="col-sm-12">
-          <section class="content">
-            <h2>Hi, I'm Gearoid. (pronounced Gar-road)</h2>
+          <section class="content centered">
+            <h1>Hi, I'm Gearóid. <span class="subtitle">(pronounced Gar-road)</span></h1>
             <p>I'm a UX/UI designer with a background in front end development.</p>
           </section>
         </div>
@@ -106,32 +109,40 @@
     </div>
   </div>
     
-    <footer class="footer fixed-bottom">
-      <div class="container-fluid">
-        <div class="row">
-          <nav class="navbar">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">
-                  <i class="fa fa-home" aria-hidden="true"></i> Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">
-                  <i class="fa fa-briefcase" aria-hidden="true"></i> Porfolio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact" id="contact">
-                  <i class="fa fa-envelope-open-o" aria-hidden="true"></i> Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+  <div class="fixed-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">
+                <i class="fa fa-home" aria-hidden="true"></i> <br />Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">
+                <i class="fa fa-briefcase" aria-hidden="true"></i> <br />Porfolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="contact">
+                <i class="fa fa-envelope-open-o" aria-hidden="true"></i> <br /> Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </footer>
+    </div>
+  </div>
 
+  <footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">twitter</div>
+      <div class="col-sm-12">Social</div>
+    </div>
+  </div>
+  </footer>
     <a class="back-to-top rounded-circle" href="#top">
       <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </a>
@@ -158,6 +169,41 @@
           return false;
       }
     });
+
+    var cbpAnimatedHeader = (function() {
+
+  var docElem = document.documentElement,
+    header = document.querySelector( '.cbp-af-header' ),
+    didScroll = false,
+    changeHeaderOn = 300;
+
+  function init() {
+    window.addEventListener( 'scroll', function( event ) {
+      if( !didScroll ) {
+        didScroll = true;
+        setTimeout( scrollPage, 250 );
+      }
+    }, false );
+  }
+
+  function scrollPage() {
+    var sy = scrollY();
+    if ( sy >= changeHeaderOn ) {
+      classie.add( header, 'cbp-af-header-shrink' );
+    }
+    else {
+      classie.remove( header, 'cbp-af-header-shrink' );
+    }
+    didScroll = false;
+  }
+
+  function scrollY() {
+    return window.pageYOffset || docElem.scrollTop;
+  }
+
+  init();
+
+})();
   });
 </script>
 
