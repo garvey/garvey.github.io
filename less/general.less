@@ -1,0 +1,122 @@
+@import 'contact.less';
+/* Variables */
+
+@black: #000000; 
+@white: #FFFFFF;
+
+@intro-bg: #db7825;
+@portfolio-bg: #1c7c70;
+@home-bg: #3277a1;
+@contact-bg: #e5bc46;
+
+@link-color: #47a3da;
+
+/* Mixin */
+
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+  -webkit-animation: @name @duration @delay @ease;
+  -moz-animation:    @name @duration @delay @ease;
+  -ms-animation:     @name @duration @delay @ease;
+}
+
+/* End Mixin */
+
+
+body {
+  background: @white;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+h1, h2, h3, h4, p {
+  /*color: lighten(@white, 20%);*/
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a {
+  color: @link-color;
+}
+
+nav.nav {
+  background: @white;
+  padding: 20px;
+
+  a {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+}
+
+.intro, .home, .portfolio, .contact {
+  height: 100vh;
+  padding: 20px;
+}
+
+.intro {
+  background: @white;
+  color: lighten(@black, 10%);
+  //background-image: url("images/home.jpg");
+
+  .content {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+.home {
+  background-color: @home-bg;
+}
+
+.portfolio {
+  background: @portfolio-bg;
+}
+
+.contact {
+  background: @contact-bg;
+}
+
+.navbar {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+footer.footer {
+  background: red;
+}
+
+.fixed-bottom {
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+  height: 40px;
+  width: 40px;
+  font-size: 26px;
+  text-align: center;
+  background: white;
+
+}
+
+

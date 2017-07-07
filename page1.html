@@ -20,8 +20,6 @@
   <!-- Fontawesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Fontawesome -->
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 
 
@@ -33,37 +31,37 @@
   
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" >
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div class="animsition">
+    <div class="container-fluid main">
 
-    <div id="top" class="container-fluid main">
-
-      <nav class="navbar-light nav fixed-top">
-        <div class="float-right">
-          <a href="#home">Home</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-
-      <div class="row intro">
-        
+      <div class="row">
         <div class="col-sm-12">
-          <section class="content centered">
-            <h1>Hi, I'm Gearóid. <span class="subtitle">(pronounced Gar-road)</span></h1>
-            <p>I'm a UX/UI designer with a background in front end development.</p>
+          <div class="title">
+            <img class="rounded-circle" src="images/gearoid.jpg"> 
+            <h1>This is page 1!!</h1>
+          </div>
+        </div>
+
+          <a href="page1.html" class="animsition-link">animsition link 1</a>
+          <a href="page2.html" class="animsition-link">animsition link 2</a>
+      
+        <div class="col-sm-12">
+          <section class="content">
+            <h2>UX/UI Designer</h2>
+            <p>BRIGHTON, APR. 7—Albert Camus, one of France’s ranking writers and winner of a Nobel Prize for Literature, was buried today in a cemetery not far from the country home he recently bought in the village of Lourmarin in the south of France.</p>
           </section>
         </div>
       </div>
 
       <div class="row">
-        <div id="home" class="col-sm-12 home">
+        <div id="#home" class="col-sm-12 home">
           <h1>Home</h1>
         </div>
       </div>
 
       <div class="row">
-        <div id="portfolio" class="col-sm-12 portfolio">
+        <div id="#portfolio" class="col-sm-12 portfolio">
           <h1>Portfolio</h1>
 
           <h2>Project: Edfest</h2>
@@ -81,7 +79,7 @@
       </div>
 
       <div class="row">
-        <div id="contact" class="col-sm-12 contact animsition">
+        <div id="#contact" class="col-sm-12 contact">
           <h1>Contact</h1>
           <div id="wufoo-ri3e3q60i3vf3p">
             Fill out my <a href="https://goggarvey.wufoo.com/forms/ri3e3q60i3vf3p">online form</a>.
@@ -109,102 +107,39 @@
     </div>
   </div>
     
-  <div class="fixed-bottom">
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="navbar">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">
-                <i class="fa fa-home" aria-hidden="true"></i> <br />Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">
-                <i class="fa fa-briefcase" aria-hidden="true"></i> <br />Porfolio
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" id="contact">
-                <i class="fa fa-envelope-open-o" aria-hidden="true"></i> <br /> Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <footer class="footer fixed-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="scrollspy-nav" class="navbar navbar-default">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">
+                  <i class="fa fa-home" aria-hidden="true"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> Porfolio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  <i class="fa fa-envelope-open-o" aria-hidden="true"></i> Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">twitter</div>
-      <div class="col-sm-12">Social</div>
-    </div>
-  </div>
-  </footer>
-    <a class="back-to-top rounded-circle" href="#top">
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </a>
-
-    <li><a class="animsition-link" href="page1.html">Basic</a></li>
-      
-
+    </footer>  
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 <script src="js/animsition.min.js" charset="utf-8"></script>
-
 <script>
-  $(document).ready(function() {
-    $('.animsition').animsition();
-
-    $('a[href*=#]:not([href=#])').click(function() {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-      if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-      }
-    });
-
-    var cbpAnimatedHeader = (function() {
-
-  var docElem = document.documentElement,
-    header = document.querySelector( '.cbp-af-header' ),
-    didScroll = false,
-    changeHeaderOn = 300;
-
-  function init() {
-    window.addEventListener( 'scroll', function( event ) {
-      if( !didScroll ) {
-        didScroll = true;
-        setTimeout( scrollPage, 250 );
-      }
-    }, false );
-  }
-
-  function scrollPage() {
-    var sy = scrollY();
-    if ( sy >= changeHeaderOn ) {
-      classie.add( header, 'cbp-af-header-shrink' );
-    }
-    else {
-      classie.remove( header, 'cbp-af-header-shrink' );
-    }
-    didScroll = false;
-  }
-
-  function scrollY() {
-    return window.pageYOffset || docElem.scrollTop;
-  }
-
-  init();
-
-})();
-  });
+$(document).ready(function() {
+  $('.animsition').animsition();
+});
 </script>
 
 </html>
