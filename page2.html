@@ -15,13 +15,17 @@
   
   <!-- Bootstrap 4 ! -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <!-- Bootstrap 4 Yeaaaah booooooyyyyy! -->
 
   <!-- Fontawesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Fontawesome -->
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 
 
@@ -33,34 +37,39 @@
   
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" >
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div class="animsition">
+    <div class="container-fluid main">
 
-    <div id="top" class="container-fluid main">
-
-      <div class="row intro">
+      <div class="row">
         <div class="col-sm-12">
           <div class="title">
-            <h1>Gearóid Garvey</h1>
+            <img class="rounded-circle" src="images/gearoid.jpg"> 
+            <h1>This is page 2!!</h1>
           </div>
+        </div>
+
+        <div class="animsition">
+          <a href="page1.html" class="animsition-link">animsition link 1</a>
+          <a href="page2.html" class="animsition-link">animsition link 2</a>
         </div>
 
         <div class="col-sm-12">
           <section class="content">
-            <h2>Hi, I'm Gearoid. (pronounced Gar-road)</h2>
-            <p>I'm a UX/UI designer with a background in front end development.</p>
+            <h2>UX/UI Designer</h2>
+            <p>BRIGHTON, APR. 7—Albert Camus, one of France’s ranking writers and winner of a Nobel Prize for Literature, was buried today in a cemetery not far from the country home he recently bought in the village of Lourmarin in the south of France.</p>
           </section>
         </div>
       </div>
 
       <div class="row">
-        <div id="home" class="col-sm-12 home">
+        <div id="#home" class="col-sm-12 home">
           <h1>Home</h1>
         </div>
       </div>
 
       <div class="row">
-        <div id="portfolio" class="col-sm-12 portfolio">
+        <div id="#portfolio" class="col-sm-12 portfolio">
           <h1>Portfolio</h1>
 
           <h2>Project: Edfest</h2>
@@ -78,7 +87,7 @@
       </div>
 
       <div class="row">
-        <div id="contact" class="col-sm-12 contact animsition">
+        <div id="#contact" class="col-sm-12 contact">
           <h1>Contact</h1>
           <div id="wufoo-ri3e3q60i3vf3p">
             Fill out my <a href="https://goggarvey.wufoo.com/forms/ri3e3q60i3vf3p">online form</a>.
@@ -109,7 +118,7 @@
     <footer class="footer fixed-bottom">
       <div class="container-fluid">
         <div class="row">
-          <nav class="navbar">
+          <nav id="scrollspy-nav" class="navbar navbar-default">
             <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link" href="#home">
@@ -122,7 +131,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact" id="contact">
+                <a class="nav-link" href="#contact">
                   <i class="fa fa-envelope-open-o" aria-hidden="true"></i> Contact
                 </a>
               </li>
@@ -130,34 +139,14 @@
           </nav>
         </div>
       </div>
-    </footer>
-
-    <a class="back-to-top rounded-circle" href="#top">
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </a>
-
-    <li><a class="animsition-link" href="page1.html">Basic</a></li>
-      
-
+    </footer>  
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-<script src="js/animsition.min.js" charset="utf-8"></script>
+<script src="js/animsition.min.js"></script>
 
 <script>
   $(document).ready(function() {
     $('.animsition').animsition();
-
-    $('a[href*=#]:not([href=#])').click(function() {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-      if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-      }
-    });
   });
 </script>
 
