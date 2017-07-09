@@ -5,7 +5,11 @@
 /* Variables */
 /* Mixin */
 /* End Mixin */
+html {
+  font-size: 10px;
+}
 body {
+  font-size: 1.6rem;
   background: #ffffff;
   position: relative;
   margin-bottom: 60px;
