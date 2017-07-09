@@ -32,6 +32,11 @@
 
 /* End Mixin */
 
+html, 
+body {
+  height: 100%;
+}
+
 html {
   font-size: 10px;
 }
@@ -41,6 +46,8 @@ body {
   background: @white;
   position: relative;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, p {
@@ -52,23 +59,32 @@ h1 {
   font-size: 4rem;
 }
 
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
 a {
   color: @link-color;
+  text-decoration: none;
+  &:hover, &:visited, &:active {
+    text-decoration: none;
+  }
 }
 
 nav.nav {
   background: @white;
   padding: 20px;
+  display: block;
+  text-align: right;
+}
 
-  a {
-    font-size: 22px;
-    padding: 0 10px;
-  }
+.main {
+  flex: 1 0 auto;
 }
 
 .intro, .home, .portfolio, .workshop, .contact {
   height: 100vh;
-  padding: 20px;
+  padding: 80px 20px 20px 20px;
 }
 
 .intro {
@@ -78,11 +94,6 @@ nav.nav {
 
   .content {
     text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
   }
   .subtitle {
     font-size: 14px;
@@ -112,7 +123,12 @@ nav.nav {
 }
 
 footer.footer {
-  background: red;
+  background: @white;
+  padding: 20px;
+
+  .fa-heart-o {
+    color: red;
+  }
 }
 
 .fixed-bottom {
@@ -133,4 +149,41 @@ footer.footer {
 
 }
 
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+  text-decoration: none;
+}
+
+.cl-effect-1 a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
 

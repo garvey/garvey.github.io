@@ -20,6 +20,10 @@ textarea.textarea {
 /* Variables */
 /* Mixin */
 /* End Mixin */
+html,
+body {
+  height: 100%;
+}
 html {
   font-size: 10px;
 }
@@ -28,6 +32,8 @@ body {
   background: #ffffff;
   position: relative;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2,
@@ -41,16 +47,26 @@ p {
 h1 {
   font-size: 4rem;
 }
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
 a {
   color: #47a3da;
+  text-decoration: none;
+}
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 nav.nav {
   background: #ffffff;
   padding: 20px;
+  display: block;
+  text-align: right;
 }
-nav.nav a {
-  font-size: 22px;
-  padding: 0 10px;
+.main {
+  flex: 1 0 auto;
 }
 .intro,
 .home,
@@ -58,7 +74,7 @@ nav.nav a {
 .workshop,
 .contact {
   height: 100vh;
-  padding: 20px;
+  padding: 80px 20px 20px 20px;
 }
 .intro {
   background: #ffffff;
@@ -66,12 +82,6 @@ nav.nav a {
 }
 .intro .content {
   text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-
-  transform: translate(-50%, -50%);
 }
 .intro .subtitle {
   font-size: 14px;
@@ -94,7 +104,11 @@ nav.nav a {
   padding: 0;
 }
 footer.footer {
-  background: red;
+  background: #ffffff;
+  padding: 20px;
+}
+footer.footer .fa-heart-o {
+  color: red;
 }
 .fixed-bottom {
   width: 100%;
@@ -110,4 +124,37 @@ footer.footer {
   font-size: 26px;
   text-align: center;
   background: white;
+}
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translatex(20px);
+  -moz-transform: translatex(20px);
+  transform: translatex(20px);
+  text-decoration: none;
+}
+.cl-effect-1 a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translatex(-20px);
+  -moz-transform: translatex(-20px);
+  transform: translatex(-20px);
+}
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translatex(0px);
+  -moz-transform: translatex(0px);
+  transform: translatex(0px);
 }
