@@ -23,6 +23,9 @@ p {
 
   font-family: 'PT Sans Narrow', sans-serif;
 }
+h1 {
+  font-size: 4rem;
+}
 a {
   color: #47a3da;
 }
