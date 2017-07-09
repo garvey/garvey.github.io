@@ -1,4 +1,4 @@
-/* Variables */
+/* Brackets links */
 body#public {
   background: transparent;
 }
@@ -17,23 +17,43 @@ input.search,
 textarea.textarea {
   padding: 10px;
 }
-/* Variables */
-/* Mixin */
-/* End Mixin */
-html,
-body {
-  height: 100%;
-}
-html {
-  font-size: 10px;
-}
-body {
-  font-size: 1.6rem;
+footer.footer {
   background: #ffffff;
-  position: relative;
-  margin-bottom: 60px;
-  display: flex;
-  flex-direction: column;
+  padding: 20px 20px 80px 20px;
+}
+@media only screen and (min-width: 576px) {
+  footer.footer {
+    padding: 20px;
+  }
+}
+footer.footer .fa-heart-o {
+  color: red;
+}
+.fixed-bottom {
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.navbar {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+nav.nav {
+  background: #ffffff;
+  padding: 20px;
+  display: block;
+  text-align: right;
+}
+.back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+  height: 40px;
+  width: 40px;
+  font-size: 26px;
+  text-align: center;
+  background: white;
 }
 h1,
 h2,
@@ -47,9 +67,6 @@ p {
 h1 {
   font-size: 4rem;
 }
-.margin-bottom-20 {
-  margin-bottom: 20px;
-}
 a {
   color: #47a3da;
   text-decoration: none;
@@ -59,73 +76,7 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-nav.nav {
-  background: #ffffff;
-  padding: 20px;
-  display: block;
-  text-align: right;
-}
-.main {
-  flex: 1 0 auto;
-}
-.intro,
-.home,
-.portfolio,
-.workshop,
-.contact {
-  height: 100vh;
-  padding: 80px 20px 20px 20px;
-}
-.intro {
-  background: #ffffff;
-  color: #1a1a1a;
-}
-.intro .content {
-  text-align: center;
-}
-.intro .subtitle {
-  font-size: 14px;
-}
-.home {
-  background-color: #3277a1;
-}
-.portfolio {
-  background: #1c7c70;
-}
-.workshop {
-  background: #cccccc;
-}
-.contact {
-  background: #e5bc46;
-}
-.navbar {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
-}
-footer.footer {
-  background: #ffffff;
-  padding: 20px;
-}
-footer.footer .fa-heart-o {
-  color: red;
-}
-.fixed-bottom {
-  width: 100%;
-  height: 60px;
-  background-color: #f5f5f5;
-}
-.back-to-top {
-  position: fixed;
-  right: 40px;
-  bottom: 100px;
-  height: 40px;
-  width: 40px;
-  font-size: 26px;
-  text-align: center;
-  background: white;
-}
-/* Effect 1: Brackets */
+/* Brackets links */
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
   display: inline-block;
@@ -157,4 +108,47 @@ footer.footer .fa-heart-o {
   -webkit-transform: translatex(0px);
   -moz-transform: translatex(0px);
   transform: translatex(0px);
+}
+/* Bracket links */
+/* Variables */
+/* Mixin */
+/* End Mixin */
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.main {
+  flex: 1 0 auto;
+}
+.intro,
+.home,
+.portfolio,
+.workshop,
+.contact {
+  height: 100vh;
+  padding: 80px 20px 20px 20px;
+}
+.intro {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+.intro .content {
+  text-align: center;
+}
+.intro .subtitle {
+  font-size: 14px;
 }

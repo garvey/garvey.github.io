@@ -1,4 +1,8 @@
 @import 'contact.less';
+@import 'footer.less';
+@import 'navigation.less';
+@import 'typography.less';
+
 /* Variables */
 
 @black: #000000; 
@@ -50,33 +54,12 @@ body {
   flex-direction: column;
 }
 
-h1, h2, h3, h4, p {
-  /*color: lighten(@white, 20%);*/
-  font-family: 'PT Sans Narrow', sans-serif;
-}
-
-h1 {
-  font-size: 4rem;
-}
 
 .margin-bottom-20 {
   margin-bottom: 20px;
 }
 
-a {
-  color: @link-color;
-  text-decoration: none;
-  &:hover, &:visited, &:active {
-    text-decoration: none;
-  }
-}
 
-nav.nav {
-  background: @white;
-  padding: 20px;
-  display: block;
-  text-align: right;
-}
 
 .main {
   flex: 1 0 auto;
@@ -101,89 +84,18 @@ nav.nav {
 }
 
 .home {
-  background-color: @home-bg;
+  
 }
 
 .portfolio {
-  background: @portfolio-bg;
+  
 }
 
 .workshop {
-  background: @workshop-bg;
+  
 }
 
 .contact {
-  background: @contact-bg;
-}
-
-.navbar {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
-}
-
-footer.footer {
-  background: @white;
-  padding: 20px;
-
-  .fa-heart-o {
-    color: red;
-  }
-}
-
-.fixed-bottom {
-  width: 100%;
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-.back-to-top {
-  position: fixed;
-  right: 40px;
-  bottom: 100px;
-  height: 40px;
-  width: 40px;
-  font-size: 26px;
-  text-align: center;
-  background: white;
-
-}
-
-
-/* Effect 1: Brackets */
-.cl-effect-1 a::before,
-.cl-effect-1 a::after {
-  display: inline-block;
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s;
-}
-
-.cl-effect-1 a::before {
-  margin-right: 10px;
-  content: '[';
-  -webkit-transform: translateX(20px);
-  -moz-transform: translateX(20px);
-  transform: translateX(20px);
-  text-decoration: none;
-}
-
-.cl-effect-1 a::after {
-  margin-left: 10px;
-  content: ']';
-  -webkit-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  transform: translateX(-20px);
-}
-
-.cl-effect-1 a:hover::before,
-.cl-effect-1 a:hover::after,
-.cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  transform: translateX(0px);
+  
 }
 
