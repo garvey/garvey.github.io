@@ -1,4 +1,7 @@
 /* Variables */
+body.public {
+  background: transparent;
+}
 #wuf-adv {
   display: none !important;
 }
