@@ -1,14 +1,21 @@
 
 footer.footer {
   background: @white;
-  padding: 20px 20px 80px 20px;
-
-  @media only screen and (min-width : 576px) {
-    padding: 20px;
-  }
-
+ 
   .fa-heart-o {
     color: red;
+
+    &:hover {
+      animation-name: pulse_animation;
+      animation-duration: 2000ms;
+      transform-origin:90% 90%;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+  a {
+    font-size: 30px;
   }
 }
 

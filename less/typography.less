@@ -1,7 +1,8 @@
 
 h1, h2, h3, h4, p {
   /*color: lighten(@white, 20%);*/
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
 }
 
 h1 {
@@ -17,8 +18,8 @@ a {
 }
 
 /* Brackets links */
-.cl-effect-1 a::before,
-.cl-effect-1 a::after {
+.inline a::before,
+.inline a::after {
   display: inline-block;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -26,7 +27,7 @@ a {
   transition: transform 0.3s, opacity 0.2s;
 }
 
-.cl-effect-1 a::before {
+.inline a::before {
   margin-right: 10px;
   content: '[';
   -webkit-transform: translateX(20px);
@@ -35,7 +36,7 @@ a {
   text-decoration: none;
 }
 
-.cl-effect-1 a::after {
+.inline a::after {
   margin-left: 10px;
   content: ']';
   -webkit-transform: translateX(-20px);
@@ -43,10 +44,10 @@ a {
   transform: translateX(-20px);
 }
 
-.cl-effect-1 a:hover::before,
-.cl-effect-1 a:hover::after,
-.cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
+.inline a:hover::before,
+.inline a:hover::after,
+.inline a:focus::before,
+.inline a:focus::after {
   opacity: 1;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
