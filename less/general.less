@@ -67,6 +67,10 @@ body {
   margin-bottom: 20px;
 }
 
+.margin-top-20 {
+  margin-top: 20px;
+}
+
 .responsive {
   width: 100%;
   height: auto;
@@ -79,17 +83,24 @@ body {
 
 .intro, .home, .workshop, .contact {
   height: 100vh;
-  padding: @padding-base * 2;
-
+  
   @media (min-width: 576px) { 
     padding: @padding-base * 8 @padding-base * 2 @padding-base * 2 @padding-base * 2;
   }
 }
 
+.centered {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
 .intro {
   background: @white;
-  color: lighten(@black, 10%);
-  //background-image: url("images/home.jpg");
+  color: #0D1F2D;
 
   .content {
     text-align: center;
@@ -97,10 +108,6 @@ body {
   .subtitle {
     font-size: 14px;
   }
-}
-
-.home {
-  
 }
 
 .workshop {
@@ -257,3 +264,16 @@ figure.effect:hover p {
   content: "";
   clear: both;
 }
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1.08); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1.05); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+
