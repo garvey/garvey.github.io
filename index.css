@@ -30,8 +30,11 @@ footer.footer .fa-heart-o:hover {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-footer.footer a {
+footer.footer a .fa {
   font-size: 30px;
+}
+footer.footer a span {
+  font-size: 12px;
 }
 .fixed-bottom {
   width: 100%;
@@ -162,7 +165,7 @@ body {
 }
 .centered {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   /* bring your own prefixes */
 
