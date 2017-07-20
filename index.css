@@ -1,4 +1,8 @@
-/* Brackets links */
+/* Variables */
+.column {
+  display: inline;
+  width: 33%;
+}
 footer.footer {
   background: #ffffff;
 }
@@ -33,8 +37,6 @@ h2,
 h3,
 h4,
 p {
-  /*color: lighten(@white, 20%);*/
-
   font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
 }
@@ -50,40 +52,6 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-/* Brackets links */
-.inline a::before,
-.inline a::after {
-  display: inline-block;
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s;
-}
-.inline a::before {
-  margin-right: 10px;
-  content: '[';
-  -webkit-transform: translatex(20px);
-  -moz-transform: translatex(20px);
-  transform: translatex(20px);
-  text-decoration: none;
-}
-.inline a::after {
-  margin-left: 10px;
-  content: ']';
-  -webkit-transform: translatex(-20px);
-  -moz-transform: translatex(-20px);
-  transform: translatex(-20px);
-}
-.inline a:hover::before,
-.inline a:hover::after,
-.inline a:focus::before,
-.inline a:focus::after {
-  opacity: 1;
-  -webkit-transform: translatex(0px);
-  -moz-transform: translatex(0px);
-  transform: translatex(0px);
-}
-/* Bracket links */
 /* Variables */
 /* Mixin */
 /* End Mixin */
@@ -147,150 +115,6 @@ body {
 }
 .intro .subtitle {
   font-size: 14px;
-}
-.workshop .project {
-  background-color: grey;
-  padding: 20px;
-}
-.workshop .project.fringe {
-  background-color: #bd3088;
-}
-.workshop .project.edfest {
-  background-color: #1a7999;
-}
-.workshop .project.interval-timer {
-  background-color: #fa824c;
-}
-/* Workshop styling */
-.grid figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  background: #3085a3;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-}
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
-}
-.grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
-}
-.grid figure figcaption {
-  padding: 2em;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-  margin: 0;
-}
-.grid figure h2 span {
-  font-weight: 800;
-}
-.grid figure p {
-  margin: 0;
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-figure.effect {
-  background: #2f3238;
-}
-figure.effect img {
-  max-width: none;
-  height: 400px;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-figure.effect figcaption {
-  text-align: left;
-}
-figure.effect h2 {
-  position: relative;
-  padding: 0.5em 0;
-}
-figure.effect p {
-  display: inline-block;
-  margin: 0 0 0.25em;
-  padding: 0.4em 1em;
-  background: rgba(255, 255, 255, 0.9);
-  color: #2f3238;
-  text-transform: none;
-  font-weight: 500;
-  font-size: 75%;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-360px, 0, 0);
-  transform: translate3d(-360px, 0, 0);
-}
-figure.effect p:first-child {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-figure.effect p:nth-of-type(2) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-figure.effect p:nth-of-type(3) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-figure.effect:hover p:first-child {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-figure.effect:hover p:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-figure.effect:hover p:nth-of-type(3) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-figure.effect:hover img {
-  opacity: 0.4;
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1);
-}
-figure.effect:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-.row:after {
-  content: "";
-  clear: both;
 }
 @keyframes pulse_animation {
   0% {
