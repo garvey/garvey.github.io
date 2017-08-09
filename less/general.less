@@ -2,8 +2,31 @@
 @import 'typography.less';
 
 @workshop-background: #ED6A5A;
+@white: #FFF;
 
-.workshop {
-  background-color: @workshop-background;
+.intro {
+  .fa {
+    text-align: center;
+    font-size: 40px;
+    display: block;
+
+    &:hover {
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  }
+}
+
+.contact {
+  background-color: darken(@white, 10%);
+
+  label {
+    text-align: left;
+  }
+
+  button {
+    float: right;
+  }
 }
 
