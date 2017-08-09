@@ -48,7 +48,7 @@
           <div class="field">
             <label class="label">Your Email Address</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input" name="email" type="text" placeholder="name@email.com" value="">
+              <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required class="input" name="email" type="text" placeholder="name@email.com" value="">
               <span class="icon is-small is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -58,7 +58,7 @@
           <div class="field">
             <label class="label">Message</label>
             <div class="control">
-              <textarea class="textarea" name="message" placeholder="Add a message"></textarea>
+              <textarea class="textarea" name="message" placeholder="Add a message" required></textarea>
             </div>
           </div>
 
