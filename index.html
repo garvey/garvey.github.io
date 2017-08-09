@@ -18,7 +18,7 @@
   <body>
 
   <!-- Intro -->
-  <section class="hero is-fullheight">
+  <section class="hero is-fullheight intro">
 
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -32,15 +32,47 @@
 
     <div class="hero-foot">
       <div class="container">
+        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+      </div>
+    </div>
+  </section>
 
-        <div class="columns social">
+  <!-- Contact -->
+  <section class="hero is-fullheight contact">
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h4 class="subtitle is-4">Drop me a message</h4>
+        <form method="POST" action="http://formspree.io/gearoid.garvey@gmail.com">
+          
+          <div class="field">
+            <label class="label">Your Email Address</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" name="email" type="text" placeholder="name@email.com" value="">
+              <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" name="message" placeholder="Add a message"></textarea>
+            </div>
+          </div>
+
+          <button class="button is-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <div class="container">
+
+        <div class="social">
           <div class="column">
             <a target="_blank" href="https://twitter.com/gearoidgarvey"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </div>
-          <div class="column">
-            <a href="mailto:gearoid.garvey@gmail.com?subject=Email from website"><i class="fa fa-envelope-open" aria-hidden="true"></i><br /><span>gearoid.garvey@gmail.com</span>
-          </div>
-          <div class="column">
             <a target="_blank" href="https://www.linkedin.com/in/gearoid-garvey-0845a215"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </div>
         </div>

@@ -13,7 +13,7 @@
   transform: rotatez(-30deg);
 }
 .hero-foot .tabs {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 h1,
 h2,
@@ -36,6 +36,22 @@ a:hover {
   text-decoration: underline;
   color: #71b8e3;
 }
-.workshop {
-  background-color: #ed6a5a;
+.intro .fa {
+  text-align: center;
+  font-size: 40px;
+  display: block;
+}
+.intro .fa:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.contact {
+  background-color: #e6e6e6;
+}
+.contact label {
+  text-align: left;
+}
+.contact button {
+  float: right;
 }
