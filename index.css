@@ -1,6 +1,7 @@
 /* Variables */
 .container {
   max-width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 576px) {
   .container {
@@ -18,11 +19,11 @@
   }
 }
 .column {
-  display: inline;
-  width: 33%;
+  display: inline-block;
+  width: 32%;
 }
 footer.footer {
-  background: #ffffff;
+  flex: 1;
 }
 footer.footer .fa-heart-o {
   color: red;
@@ -70,70 +71,6 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-/* Variables */
-/* Mixin */
-/* End Mixin */
-html,
-body {
-  height: 100%;
-}
-html {
-  font-size: 10px;
-}
-body {
-  font-size: 1.6rem;
-  background: #ffffff;
-  position: relative;
-  margin-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-}
-.margin-bottom-20 {
-  margin-bottom: 20px;
-}
-.margin-top-20 {
-  margin-top: 20px;
-}
-.responsive {
-  width: 100%;
-  height: auto;
-}
-.main {
-  flex: 1 0 auto;
-}
-.intro,
-.home,
-.workshop,
-.contact {
-  height: 100vh;
-}
-@media (min-width: 576px) {
-  .intro,
-  .home,
-  .workshop,
-  .contact {
-    padding: 80px 20px 20px 20px;
-  }
-}
-.centered {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  /* bring your own prefixes */
-
-  transform: translate(-50%, -50%);
-  width: 80%;
-}
-.intro {
-  background: #ffffff;
-  color: #0D1F2D;
-}
-.intro .content {
-  text-align: center;
-}
-.intro .subtitle {
-  font-size: 14px;
-}
 @keyframes pulse_animation {
   0% {
     transform: scale(1);
@@ -159,4 +96,33 @@ body {
   100% {
     transform: scale(1);
   }
+}
+/* Variables */
+/* End Variables */
+/* General */
+.text-center {
+  text-align: center;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+/* end General */
+html,
+body {
+  height: 100%;
+  display: flex;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }

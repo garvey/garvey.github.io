@@ -1,6 +1,7 @@
 @import 'grid';
 @import 'footer.less';
 @import 'typography.less';
+@import 'animation.less';
 
 /* Variables */
 
@@ -18,28 +19,28 @@
 
 @dark: #2f3238;
 
-/* Mixin */
+/* End Variables */
 
-.gradient (@startColor: #eee, @endColor: white) {
-  background-color: @startColor;
-  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
-  background: -webkit-linear-gradient(top, @startColor, @endColor);
-  background: -moz-linear-gradient(top, @startColor, @endColor);
-  background: -ms-linear-gradient(top, @startColor, @endColor);
-  background: -o-linear-gradient(top, @startColor, @endColor);
+/* General */
+
+.text-center {
+  text-align: center;
 }
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
-  -webkit-animation: @name @duration @delay @ease;
-  -moz-animation:    @name @duration @delay @ease;
-  -ms-animation:     @name @duration @delay @ease;
+.margin-bottom-20 {
+  margin-bottom: 20px;
 }
 
-/* End Mixin */
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+/* end General */
 
 html, 
 body {
   height: 100%;
+  display: flex;
 }
 
 html {
@@ -53,65 +54,6 @@ body {
   margin-bottom: @margin-base * 6;
   display: flex;
   flex-direction: column;
-}
-
-
-.margin-bottom-20 {
-  margin-bottom: 20px;
-}
-
-.margin-top-20 {
-  margin-top: 20px;
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
-
-.main {
-  flex: 1 0 auto;
-}
-
-.intro, .home, .workshop, .contact {
-  height: 100vh;
-  
-  @media (min-width: 576px) { 
-    padding: @padding-base * 8 @padding-base * 2 @padding-base * 2 @padding-base * 2;
-  }
-}
-
-.centered {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  width: 80%;
-}
-
-.intro {
-  background: @white;
-  color: #0D1F2D;
-
-  .content {
-    text-align: center;
-  }
-  .subtitle {
-    font-size: 14px;
-  }
-}
-
-@keyframes pulse_animation {
-  0% { transform: scale(1); }
-  30% { transform: scale(1); }
-  40% { transform: scale(1.08); }
-  50% { transform: scale(1); }
-  60% { transform: scale(1); }
-  70% { transform: scale(1.05); }
-  80% { transform: scale(1); }
-  100% { transform: scale(1); }
 }
 
 
