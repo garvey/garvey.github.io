@@ -1,6 +1,3 @@
-.social {
-  text-align: center;
-}
 .social .fa {
   font-size: 26px;
 }
@@ -44,6 +41,12 @@ a {
 a:hover {
   text-decoration: underline;
   color: #71b8e3;
+}
+.recent h2 {
+  padding-bottom: 60px;
+}
+.contact .hero-foot {
+  color: #7d7d7d;
 }
 .intro .fa {
   text-align: center;
