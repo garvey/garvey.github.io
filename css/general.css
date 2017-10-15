@@ -1,5 +1,12 @@
 .social {
-  padding: 40px 0;
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (min-width: 769px) {
+  .social {
+    padding: 20px 10px;
+    text-align: right;
+  }
 }
 .social .fa {
   font-size: 26px;
@@ -7,13 +14,23 @@
 .social .fa:last-of-type {
   padding-left: 20px;
 }
-.fa-heart-o {
+.built {
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (min-width: 769px) {
+  .built {
+    padding: 20px 10px;
+    text-align: left;
+  }
+}
+.built .fa-heart {
   color: #a30b37;
 }
-.fa-heart-o:hover {
-  -webkit-transform: rotateZ(-30deg);
-  -ms-transform: rotateZ(-30deg);
-  transform: rotateZ(-30deg);
+.built .fa-heart:hover {
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
 }
 .hero-foot .tabs {
   padding-bottom: 10px;
@@ -24,7 +41,7 @@ h3,
 h4,
 p {
   /*color: lighten(@white, 20%);*/
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.5em;
 }
 h1 {
@@ -59,23 +76,32 @@ a:hover {
     text-align: left;
   }
 }
-.projects h2 {
+.projects h1 {
   padding-bottom: 40px;
 }
 .projects .screenshot img {
   max-height: 500px;
 }
-.projects .hero-foot {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .projects .fa {
   font-size: 40px;
   padding: 0 10px;
 }
+.projects .fa:hover {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+.projects .external-links {
+  padding: 20px 0;
+}
+.projects .external-links a {
+  color: #fff;
+}
+.projects .external-links a:hover {
+  text-decoration: none;
+}
 .truChallenge {
-  background: #ED6A5A;
-  color: #f3f5f0;
+  background: #434a54;
+  color: #fff;
 }
 .fringe {
   background: #4e4893;
@@ -85,7 +111,15 @@ a:hover {
   color: #ffffff;
 }
 .wireCompare {
-  background: #F4F1BB;
+  background: #225081;
+  color: #fff;
+}
+.wireCompare h1 {
+  font-size: 2.8rem;
+}
+.wireCompare a {
+  color: #fff;
+  text-decoration: underline;
 }
 .intro h1 {
   padding-bottom: 40px;

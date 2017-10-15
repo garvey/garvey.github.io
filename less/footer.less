@@ -1,7 +1,13 @@
 @red: #A30B37;
 
 .social {
-  padding: 40px 0;
+  text-align: center;
+  padding: 5px;
+
+  @media screen and (min-width: @tablet) {
+    padding: 20px 10px;
+    text-align: right;
+  }
   .fa {
     font-size: 26px;
 
@@ -11,13 +17,21 @@
   }
 }
 
-.fa-heart-o {
-  color: @red;
+.built {
+  text-align: center;
+  padding: 5px;
+  @media screen and (min-width: @tablet) {
+    padding: 20px 10px;
+    text-align: left;
+  }
+  .fa-heart {
+    color: @red;
 
-  &:hover {
-    -webkit-transform: rotateZ(-30deg);
-    -ms-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);
+    &:hover {
+      -webkit-transform: rotateZ(-10deg);
+      -ms-transform: rotateZ(-10deg);
+      transform: rotateZ(-10deg);
+    }
   }
 }
 

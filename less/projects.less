@@ -8,7 +8,7 @@
   @media screen and (min-width: @tablet) {
     text-align: left;
   }
-  h2 {
+  h1 {
     padding-bottom: 40px;
   }
 
@@ -17,20 +17,32 @@
       max-height: 500px;
     }
   }
-
-  .hero-foot {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .fa {
     font-size: 40px;
     padding: 0 10px;
+
+    &:hover {
+      color: darken(#fff, 10%);
+      text-decoration: none;
+    }
+  }
+
+  .external-links {
+    padding: 20px 0;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
 .truChallenge {
-  background: #ED6A5A;
-  color: @text-color;
+  background: #434a54;
+  color: #fff;
 }
 
 .fringe {
@@ -43,5 +55,15 @@
 }
 
 .wireCompare {
-  background: #F4F1BB;
+  background: #225081;
+  color: #fff;
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
