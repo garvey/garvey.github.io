@@ -80,7 +80,7 @@ a:hover {
   }
 }
 .projects h1 {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .projects .screenshot img {
   max-height: 500px;
@@ -90,7 +90,7 @@ a:hover {
   padding: 0 10px;
 }
 .projects .fa:hover {
-  color: #F3F5F0;
+  color: #f3f5f0;
   text-decoration: none;
 }
 .projects .external-links {
