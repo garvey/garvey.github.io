@@ -1,0 +1,188 @@
+.social {
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (min-width: 769px) {
+  .social {
+    padding: 20px 10px;
+    text-align: right;
+  }
+}
+.social .fa {
+  font-size: 26px;
+}
+.social .fa:last-of-type {
+  padding-left: 20px;
+}
+.social a:hover {
+  text-decoration: none;
+}
+.built {
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (min-width: 769px) {
+  .built {
+    padding: 20px 10px;
+    text-align: left;
+  }
+}
+.built .fa-heart {
+  color: #a30b37;
+}
+.built .fa-heart:hover {
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+}
+.hero-foot .tabs {
+  padding-bottom: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  /*color: lighten(@white, 20%);*/
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+a {
+  color: #47a3da;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #71b8e3;
+}
+.contact .hero-foot {
+  color: #ffffff;
+}
+.projects {
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 769px) {
+  .projects {
+    text-align: left;
+  }
+}
+.projects h1 {
+  padding-bottom: 20px;
+}
+.projects .screenshot img {
+  max-height: 500px;
+}
+.projects .fa {
+  font-size: 40px;
+  padding: 0 10px;
+}
+.projects .fa:hover {
+  color: #f3f5f0;
+  text-decoration: none;
+}
+.projects .external-links {
+  padding: 20px 0;
+}
+.projects .external-links a {
+  color: #fff;
+}
+.projects .external-links a:hover {
+  text-decoration: none;
+}
+.truChallenge {
+  background: #434a54;
+  color: #fff;
+}
+.fringe {
+  background: #4e4893;
+  color: #f3f5f0;
+}
+.fringe a {
+  color: #ffffff;
+}
+.wireCompare {
+  background: #225081;
+  color: #fff;
+}
+.wireCompare h1 {
+  font-size: 2.8rem;
+}
+.wireCompare a {
+  color: #fff;
+  text-decoration: underline;
+}
+.intro h1 {
+  padding-bottom: 40px;
+}
+.intro .fa {
+  text-align: center;
+  font-size: 40px;
+  display: block;
+}
+.intro .fa:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.contact {
+  background-color: #e6e6e6;
+}
+.contact label {
+  text-align: left;
+}
+.contact button {
+  float: right;
+}
+/* Push */
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-push:hover,
+.hvr-push:focus,
+.hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
